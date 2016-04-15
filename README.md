@@ -7,7 +7,7 @@
 As it is useful to debug in-situ some nodejs microservices deployed on a Kubernetes based platform (like Openshift Origin or native Kubernetes), this option has been added.
 See the Kubernetes subdirectory(including some YAML files) and the PDF of the instructions :
 ```bash
-/kubernetes/Debugging%20a%20NodeJS%20application%20while%20deployed%20on%20Kubernetes.pdf
+/kubernetes/Debugging_a_NodeJS_application_while_deployed_on_Kubernetes.pdf
 ``` 
 
 
