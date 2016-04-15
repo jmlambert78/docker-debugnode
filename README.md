@@ -6,7 +6,10 @@
 ### Added the ability to debug a NodeJS microservice deployed as a Kubernetes Pod
 As it is useful to debug in-situ some nodejs microservices deployed on a Kubernetes based platform (like Openshift Origin or native Kubernetes), this option has been added.
 See the Kubernetes subdirectory(including some YAML files) and the PDF of the instructions :
-```/kubernetes/Debugging%20a%20NodeJS%20application%20while%20deployed%20on%20Kubernetes.pdf```
+```bash
+/kubernetes/Debugging%20a%20NodeJS%20application%20while%20deployed%20on%20Kubernetes.pdf
+``` 
+
 
 ### Create a set of docker imagenodeapp-debug:4 built with node-inspector
 Debug local Node.js applications using different versions of node in a modularized docker environment. Build a base image of only the official docker hub Node.js release, plus an npm install of node-inspector. This allows new images to be built quickly which contain the application to be debugged without any change to the local environment.
