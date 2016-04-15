@@ -1,0 +1,32 @@
+{
+  "kind": "Pod",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "nodedebug",
+    "labels": {
+      "app": "webapp"
+    }
+  },
+  "spec": {
+    "containers": [
+      {
+        "name": "nodedebug",
+        "image": "nodeapp-debug:0.12",
+        "ports": [
+          {
+            "name": "webapp", 
+	    "containerPort": 3000
+          },
+          {
+            "name": "dbgapp",
+            "containerPort": 8080
+          },
+          {
+            "name": "debug",
+            "containerPort": 5858
+          }
+        ]
+      }
+    ]
+  }
+}

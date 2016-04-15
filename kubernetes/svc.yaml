@@ -1,0 +1,32 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "nodedbg-svc"
+    },
+    "spec": {
+        "selector": {
+            "app": "webapp"
+        },
+        "ports": [
+            {
+                "name": "dbgapp",
+                "protocol": "TCP",
+                "port": 8080,
+                "targetPort": 8080
+            },
+            {
+                "name": "webapp",
+                "protocol": "TCP",
+                "port": 3000,
+                "targetPort": 3000
+            },
+            {
+                "name": "dbgport",
+                "protocol": "TCP",
+                "port": 5858,
+                "targetPort": 5858
+            }
+        ]
+    }
+}
